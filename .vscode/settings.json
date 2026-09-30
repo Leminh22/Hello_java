@@ -3,5 +3,7 @@
         "."
     ],
     "java.project.referencedLibraries": [],
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "chat.disableAIFeatures": true,
+    "git.ignoreLimitWarning": true
 }
