@@ -10,21 +10,21 @@ public class MainThread {
         System.out.println("Hay nhap doanh so trong qua trinh lam viec");
         int doanhSoLamViec = scanner.nextInt();
 
-    //     if (soNamLamViec >= 5) {
-    //       if (doanhSoLamViec >= 20000) {
-    //         System.out.println("Nhân viên xuất sắc");
-    //        } else {
-    // //             System.out.println("Cần cố gắng hơn");
-    // //         }
-    // //     } else {
-    // //         System.out.println("Mới tham gia công ty.");
-    // //     }
-    // //     scanner.close();
-    // // }
+         if (soNamLamViec >= 5) {
+          if (doanhSoLamViec >= 20000) {
+             System.out.println("Nhân viên xuất sắc");
+           } else {
+             System.out.println("Cần cố gắng hơn");
+             }
+               } else {
+             System.out.println("Mới tham gia công ty.");
+         }
+         scanner.close();
+        }
 
     }
     
-}
+
     
     // if ( 5 < soNamLamViec && doanhSoLamViec >= 20000){
     //         System.out.print("Nhan vien xuat sac");

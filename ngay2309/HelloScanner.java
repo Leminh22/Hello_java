@@ -34,6 +34,8 @@ public class HelloScanner {
 // "||" Ký tự logic OR, thường được sử dụng để hiển thị các dòng phân cách hoặc tiêu đề trong bảng dữ liệu.
 // "?" Ký tự điều kiện, thường được sử dụng để hiển thị các dòng phân cách hoặc tiêu đề trong bảng dữ liệu.
 // ":" Ký tự điều kiện, thường được sử dụng để hiển thị các dòng phân cách hoặc tiêu đề trong bảng dữ liệu.
+// "!" Ký tự phủ định, thường được sử dụng để hiển thị các dòng phân cách hoặc tiêu đề trong bảng dữ liệu.
+// "=" Ký tự gán, thường được sử dụng để hiển thị các dòng phân cách hoặc tiêu đề trong bảng dữ liệu.
 // VD : boolean gender = false;  
   // System.out.println("Giới tính của bạn là: " + (gender == true ? "Nam" : "Nữ")); 
   // Điều kiện: gender == true (Kiểm tra xem biến gender có bằng true hay không).
