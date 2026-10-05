@@ -23,7 +23,6 @@ public class MenuDemo {
       return "MaSV : " + rollNumber + "  HovaTen : " + name + "  Tuoi : " + age + "  Diem : " + gpa;
     }
   }
-
   public static void main(String[] args) {
     List<Student> listStudent = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
@@ -65,6 +64,29 @@ public class MenuDemo {
           break;
         case 3:
           System.out.println("Update student information");
+          System.out.print("Nhap ma sinh vien can cap nhat : ");
+          int searchRollNumber = scanner.nextInt();
+          scanner.nextLine();
+          boolean isFound = false;
+          for(Student s : listStudent)
+            if(s.rollNumber == searchRollNumber){
+              isFound = true;
+              System.out.println("Tim thay sinh vien " + s.name);
+              System.out.println("Tim thay sinh vien " );
+              System.out.println("-----Hay cap nhat thong tin sinh vien-----");
+              //Cap nhat thong tin
+              System.out.println("Cap nhat ho va ten sinh vien : ");
+              s.name = scanner.nextLine();
+              System.out.println("Cap nhat tuoi sinh vien : ");
+              s.age = scanner.nextInt();
+              System.out.println("Cap nhat diem sinh vien : ");
+              s.gpa = scanner.nextDouble();
+              System.out.println("Cap nhat sinh vien thanh cong");
+              break;//thoat phan tim kiem khi cap nhat thanh cong
+            }
+            if(!isFound){
+             System.out.println("Khong tim thay sinh vien qua ma sinh vien" + searchRollNumber);
+            }
           break;
         case 4:
           System.out.println("Delete student");
@@ -81,6 +103,7 @@ public class MenuDemo {
       }
       System.out.println("Press c to continue!");
       scanner.nextLine();
+      scanner.close();
     }
   }
 }
